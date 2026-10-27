@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f7f0">
+  <meta name="description" content="La boîte à outils des designers qui prototypent dans VS Code. Télécharge Baba Select et BABA versioning, puis découvre comment les installer et les utiliser.">
+  <meta property="og:title" content="Baba's tool box — Garde le flow. Crée la suite.">
+  <meta property="og:description" content="Deux extensions gratuites pour cibler un composant avec Codex et garder les versions de tes prototypes.">
+  <meta property="og:type" content="website">
+  <title>Baba's tool box — Des idées aux prototypes</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="toolbox" viewBox="0 0 24 24"><path d="M8 7V4h8v3M3 8h18v13H3zM3 13h18M10 11h4v4h-4z"/></symbol>
+  <symbol id="cursor" viewBox="0 0 24 24"><path d="m5 3 14 10-7 1-3 7zM13 14l5 6"/></symbol>
+  <symbol id="history" viewBox="0 0 24 24"><path d="M3 11a9 9 0 1 1 2 7M3 5v6h6M12 7v5l4 2"/></symbol>
+  <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+</defs></svg>
+<header class="site-header wrap">
+  <a href="#" class="brand" aria-label="Baba's tool box, accueil"><span class="brand-mark"><svg aria-hidden="true"><use href="#toolbox"/></svg></span><span>Baba’s <b>tool box</b><span class="brand-dot">.</span></span></a>
+  <nav aria-label="Navigation principale"><a href="#outils">Les outils</a><a href="#installation">Installation</a><a href="#mode-emploi">Mode d’emploi <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main id="contenu">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> POUR LES DESIGNERS QUI PROTOTYPENT</p>
+      <h1 id="hero-title">Garde le flow.<br><em>Crée la suite.</em></h1>
+      <p class="hero-intro">Moins de « le bouton en haut à droite ».<br>Plus de « et si on essayait ça ? »</p>
+      <p class="hero-description">Deux petits outils pour sélectionner ce que tu veux retravailler et garder les versions qui comptent. Directement dans VS Code.</p>
+      <a class="button primary" href="#outils">Ouvrir la boîte <span aria-hidden="true">↓</span></a>
+      <div class="hero-meta"><span>2 extensions gratuites</span><span>Prototypes HTML, CSS & JS</span></div>
+    </div>
+    <div class="hero-art" aria-label="Illustration d’un composant sélectionné et de versions sauvegardées" role="img">
+      <span class="art-note">Un clic. Le bon contexte.</span>
+      <svg class="scribble" viewBox="0 0 100 70" aria-hidden="true"><path d="M3 3C90-4 98 25 77 56m-10-15 10 15 16-7"/></svg>
+      <div class="mock-window">
+        <div class="mock-title"><span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span><span>ton-prototype.html</span><span aria-hidden="true">↗</span></div>
+        <div class="mock-content"><div class="mock-sidebar" aria-hidden="true"><svg aria-hidden="true"><use href="#toolbox"/></svg><span>⌕</span><span>⌘</span><svg class="side-active"><use href="#cursor"/></svg></div>
+          <div class="mock-page"><span class="mini-tag">TON PROCHAIN GRAND TRUC</span><h2>Ça commence<br>par une idée<span>.</span></h2><p>Et un peu de place pour essayer.</p><div class="mock-selection"><span class="selection-label">button.primary · 1 élément</span><span class="mock-cta">Explorer l’idée <span>↗</span></span><i class="handle tl"></i><i class="handle tr"></i><i class="handle bl"></i><i class="handle br"></i></div><svg class="big-cursor" aria-hidden="true"><use href="#cursor"/></svg><div class="mock-lines"><i></i><i></i></div></div>
+        </div>
+        <div class="mock-status"><svg aria-hidden="true"><use href="#cursor"/></svg> Baba Select <span>Contexte prêt ✓</span></div>
+      </div>
+      <div class="context-float"><span class="float-icon"><svg aria-hidden="true"><use href="#check"/></svg></span><div><strong>Ajouté au contexte</strong><span>À toi d’écrire la suite dans Codex.</span></div></div>
+      <div class="history-float"><span class="history-icon"><svg aria-hidden="true"><use href="#history"/></svg></span><div><strong>Une idée de côté.</strong><span>Version « Avant d’essayer » sauvegardée.</span></div><span class="history-tick">✓</span></div>
+      <span class="art-sticker">less friction<br><b>more creation ✳</b></span>
+    </div>
+  </section>
+  <div class="principles wrap"><span>Conçus pour ton workflow</span><span><svg aria-hidden="true"><use href="#check"/></svg> Dans ton VS Code</span><span><svg aria-hidden="true"><use href="#check"/></svg> Sur tes fichiers locaux</span><span><svg aria-hidden="true"><use href="#check"/></svg> À ton rythme</span></div>
+
+  <section id="outils" class="tools-section wrap" aria-labelledby="tools-title">
+    <div class="section-heading"><div><p class="eyebrow">DANS LA BOÎTE</p><h2 id="tools-title">Deux outils. Deux super-pouvoirs.</h2></div></div>
+    <div class="tools-grid">
+      <article class="tool-card select-card">
+        <div class="tool-top"><span class="tool-icon"><svg aria-hidden="true"><use href="#cursor"/></svg></span><span class="version">v0.2.1</span></div>
+        <p class="tool-category">CIBLER UN COMPOSANT</p><h3>Baba Select<span>↗</span></h3>
+        <p class="tool-promise">Montre. Puis demande.</p><p class="tool-description">Clique sur un élément de ton aperçu. Son contexte rejoint le chat Codex déjà ouvert. Tu peux enfin dire « ce bouton ».</p>
+        <ul class="feature-list"><li><svg aria-hidden="true"><use href="#check"/></svg> Sélection visuelle et remontée au parent</li><li><svg aria-hidden="true"><use href="#check"/></svg> Contexte joint sans envoyer de message</li><li><svg aria-hidden="true"><use href="#check"/></svg> Actualisation de l’aperçu connecté après sauvegarde</li></ul>
+        <div class="tool-bottom"><a class="button download" href="./downloads/baba-select-0.2.1.vsix" download="baba-select-0.2.1.vsix" data-download="select"><svg aria-hidden="true"><use href="#download"/></svg> Télécharger Baba Select <span>.vsix</span></a><div class="tool-links"><span>VS Code 1.143+ · Codex requis</span><a href="#mode-emploi" data-open-guide="select">Comment ça marche <span aria-hidden="true">↗</span></a></div></div>
+      </article>
+      <article class="tool-card versioning-card">
+        <div class="tool-top"><span class="tool-icon"><svg aria-hidden="true"><use href="#history"/></svg></span><span class="version">v0.1.5</span></div>
+        <p class="tool-category">GARDER TES ÉTAPES</p><h3>BABA versioning<span>↺</span></h3>
+        <p class="tool-promise">Explore. Tu peux revenir.</p><p class="tool-description">Sauvegarde une étape de ton prototype, donne-lui un nom et retrouve-la quand tu veux. Les bonnes idées méritent un point de retour.</p>
+        <ul class="feature-list"><li><svg aria-hidden="true"><use href="#check"/></svg> Versions nommées, avec miniature en option</li><li><svg aria-hidden="true"><use href="#check"/></svg> Restauration avec une sauvegarde de sécurité</li><li><svg aria-hidden="true"><use href="#check"/></svg> Dossier « versions » créé à ta première sauvegarde</li></ul>
+        <div class="tool-bottom"><a class="button download" href="./downloads/baba-versioning-0.1.5.vsix" download="baba-versioning-0.1.5.vsix" data-download="versioning"><svg aria-hidden="true"><use href="#download"/></svg> Télécharger BABA versioning <span>.vsix</span></a><div class="tool-links"><span>VS Code 1.95+ · Autonome</span><a href="#mode-emploi" data-open-guide="versioning">Comment ça marche <span aria-hidden="true">↗</span></a></div></div>
+      </article>
+    </div>
+    <p class="download-note">Chaque bouton télécharge le fichier d’installation correspondant. <a href="#installation">La suite se passe dans VS Code.</a></p>
+    <p id="download-status" class="sr-only" role="status" aria-live="polite"></p>
+  </section>
+
+  <section id="installation" class="install-section" aria-labelledby="install-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">LE PETIT INSTALL GUIDE</p><h2 id="install-title">De la boîte à ton éditeur.</h2></div><span class="pill">Pas besoin de terminal</span></div>
+    <ol class="install-steps">
+      <li><span class="step-number">01</span><h3>Télécharge ton outil</h3><p>Choisis un bouton ci-dessus. Garde le fichier <code>.vsix</code> tel quel : inutile de le décompresser.</p><span class="file-chip"><svg aria-hidden="true"><use href="#download"/></svg> baba-select-0.2.1.vsix</span></li>
+      <li><span class="step-number">02</span><h3>Ajoute-le à VS Code</h3><p>Ouvre le panneau <strong>Extensions</strong>, puis le menu <strong>…</strong>. Choisis <strong>Install from VSIX…</strong> (« Installer à partir du VSIX… ») et sélectionne ton fichier.</p><div class="menu-sketch"><span aria-hidden="true">▦</span> Extensions <b>…</b><span class="menu-option">Install from VSIX…</span></div></li>
+      <li><span class="step-number">03</span><h3>Recharge. Et crée.</h3><p>Recharge la fenêtre si VS Code le demande. Ouvre le dossier local de ton prototype et accorde-lui ta confiance si tu en connais le contenu.</p><span class="ready-chip"><svg aria-hidden="true"><use href="#check"/></svg> Tes outils sont prêts</span></li>
+    </ol>
+    <div class="install-footnote"><p>Tu installes les deux ? Répète l’étape 2 pour le second fichier. Pour une mise à jour, installe simplement le nouveau VSIX.</p></div>
+  </div></section>
+
+  <section id="mode-emploi" class="guide-section wrap" aria-labelledby="guide-title">
+    <div class="section-heading"><div><p class="eyebrow">ET MAINTENANT ?</p><h2 id="guide-title">Un geste, puis le suivant.</h2></div></div>
+    <div class="guide-tabs" role="tablist" aria-label="Choisir le tutoriel"><button type="button" id="tab-select" role="tab" aria-controls="panel-select" aria-selected="true" tabindex="0"><svg aria-hidden="true"><use href="#cursor"/></svg> Baba Select</button><button type="button" id="tab-versioning" role="tab" aria-controls="panel-versioning" aria-selected="false" tabindex="-1"><svg aria-hidden="true"><use href="#history"/></svg> BABA versioning</button></div>
+    <div id="panel-select" role="tabpanel" aria-labelledby="tab-select" class="guide-panel">
+      <div class="recipe"><h3>Ce composant-là.<br>Exactement celui-là.</h3><ol><li><strong>Garde ton aperçu et Codex ouverts.</strong><p>Utilise le navigateur intégré de VS Code. Pour un fichier HTML : clic droit → <em>Open in Integrated Browser</em>. Si tu as plusieurs chats, clique d’abord dans celui que tu souhaites utiliser.</p></li><li><strong>Active Baba Select et clique.</strong><p>Utilise « Baba Select » dans la barre d’état, en bas à droite de VS Code. Si une cible est demandée, choisis l’onglet d’aperçu existant. Un cadre jaune indique le survol, un cadre bleu la sélection.</p></li><li><strong>Ajuste la cible.</strong><p>« Parent ↑ » remonte du texte au bouton, puis à la carte. Une nouvelle sélection remplace la cible. Échap rend la navigation normale.</p></li><li><strong>Écris ta demande dans le même chat.</strong><p>Vérifie la présence de <code>baba-select-context.md</code> dans Codex, puis envoie toi-même ta demande.</p></li></ol><blockquote>« Réduis ce bouton et aligne-le avec le titre. »</blockquote><a class="text-link" href="./docs/baba-select.md" target="_blank" rel="noopener">Lire la documentation complète <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div id="panel-versioning" role="tabpanel" aria-labelledby="tab-versioning" class="guide-panel" hidden>
+      <div class="recipe"><h3>Laisse une trace.<br>Ose la prochaine idée.</h3><ol><li><strong>Ouvre le bon dossier.</strong></li><li><strong>Crée ton premier point de sauvegarde.</strong><p>Dans la barre latérale à gauche de VS Code, clique sur l’icône en forme de pendule avec une flèche pour ouvrir BABA versioning. Clique ensuite sur « Sauvegarder une version ». Donne-lui un nom, une description et, si tu veux, une miniature.</p></li><li><strong>Continue à explorer.</strong><p>Le dossier <code>versions</code> apparaît à la première sauvegarde réussie. Enregistrer ton fichier source ne crée pas de nouvelle version : tu choisis chaque étape à conserver.</p></li><li><strong>Reviens ou pars dans une autre direction.</strong><p>« Restaurer » remet le projet dans l’état choisi et conserve d’abord l’état actuel dans une version de sécurité. « Créer une variante » crée une copie indépendante.</p></li></ol><div class="recipe-callout"><svg aria-hidden="true"><use href="#history"/></svg><p>Avant une restauration, mets en pause Codex et les autres outils qui écrivent dans le projet.</p></div><a class="text-link" href="./docs/baba-versioning.md" target="_blank" rel="noopener">Lire la documentation complète <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <noscript><p class="noscript-note">Les téléchargements et l’installation fonctionnent sans JavaScript. Pour le second tutoriel, consulte la <a href="./docs/baba-versioning.md">documentation BABA versioning</a>.</p></noscript>
+  </section>
+
+  <section class="closing wrap"><span class="closing-icon"><svg aria-hidden="true"><use href="#toolbox"/></svg></span><div><p>Les idées n’attendent pas.</p><h2>Ta boîte est prête.</h2></div><a class="button primary" href="#outils">Choisir mes outils <span aria-hidden="true">↑</span></a></section>
+</main>
+<footer class="site-footer wrap"><div><a class="brand" href="#">Baba’s <b>tool box</b><span class="brand-dot">.</span></a><p>De petits outils. De la place pour créer.</p></div><p class="footer-contact">Une question ?<br><strong>Contactez Amélien ;)</strong></p><p class="footer-small">Ces deux extensions ont été créées par Amélien.<br>Versions proposées : Select 0.2.1 · versioning 0.1.5</p></footer>
+</body>
+</html>
