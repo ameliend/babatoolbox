@@ -54,3 +54,10 @@ Removed both interactive demos and adjusted the guide to a single readable colum
 - The existing HTTP audit could not be rerun from the restricted shell during this revision. The earlier HTTP checks above apply to the prior revision. The updated page and styles were loaded and inspected through the browser's local preview.
 - Current visual evidence: `babas-tool-box-canal.jpg` and `babas-tool-box-canal-mobile.jpg`, supplied next to the site folder. The previous screenshots document earlier styling.
 - This is a website styling check, not a new VS Code integration or accessibility conformance audit.
+
+## Baba Select 0.2.2 — 23 November 2026
+
+- Updated the current download, version labels and guide to 0.2.2. The previous installer remains available for existing direct links.
+- Added the close button to the guide: it exits selection mode like Escape/Terminer and restores focus to the previously focused page element.
+- The extension passed all 13 existing automated tests, TypeScript checking and packaging. A separate DOM check verified close-button removal of the picker and focus restoration. No new real VS Code integration check was performed.
+- Verified the new installer matches the supplied build, its ZIP integrity and manifest version, local page links and SHA-256 download checksums.

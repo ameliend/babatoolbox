@@ -1,6 +1,6 @@
 # Baba's tool box
 
-A standalone French showcase and download hub for **Baba Select 0.2.1** and **BABA versioning 0.1.5**. Built with HTML, CSS and vanilla JavaScript. No build step, third-party scripts, external fonts, analytics or runtime dependencies.
+A standalone French showcase and download hub for **Baba Select 0.2.2** and **BABA versioning 0.1.5**. Built with HTML, CSS and vanilla JavaScript. No build step, third-party scripts, external fonts, analytics or runtime dependencies.
 
 ## Visual direction
 
