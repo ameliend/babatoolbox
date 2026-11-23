@@ -14,12 +14,12 @@ These are the verified development versions, not a guarantee for every later rel
 
 ## Install and use
 
-1. In VS Code, run **Extensions: Install from VSIX…**, then select `baba-select-0.2.2.vsix`.
+1. In VS Code, run **Extensions: Install from VSIX…**, then select `baba-select-0.2.3.vsix`.
 2. Keep your existing preview and Codex conversation open. Focus the intended Codex conversation first if you have several panels.
 3. Click **Baba Select** in the status bar, or run **Baba Select : sélectionner un élément**. If the debugger asks for a target, choose the **existing preview tab**. Do not choose “Open new…”.
 4. Hover (yellow dashed border), then click (blue solid border). The click creates/updates `baba-select-context.md` in VS Code's extension storage and invokes Codex's official file-context command.
 5. Use **Parent ↑** repeatedly to move from a nested text span to its button, card, then section. Intermediate wrappers are real DOM parents.
-6. Click the **× close button** in the top-right corner, or press **Escape** or **Terminer** to restore normal navigation. Confirm the file chip is visible in Codex, then write your request in the same composer and send it yourself.
+6. Click **×** in the top-right corner to hide the panel while continuing to select components. Use **Baba Select · afficher** to reopen it. Press **Escape** or **Terminer** to exit selection mode and restore normal navigation. Confirm the file chip is visible in Codex, then write your request in the same composer and send it yourself.
 
 Keyboard: Tab to the selection area; Up moves to the parent, Down to the first child, Left/Right to siblings. Enter/Space attaches the focused candidate. Tab also reaches the toolbar buttons, with a visible focus outline. Escape exits selection mode.
 
@@ -35,7 +35,7 @@ This is an instruction in the attached context, **not a filesystem write restric
 
 ## Automatic preview refresh
 
-Starting Baba Select also connects automatic refresh to the same local `file://` preview. After Codex saves a linked CSS or JavaScript file inside the trusted workspace, Baba Select waits 800 ms to group edits and reloads that tab. It neither saves buffers nor edits the prototype. The close button, Escape or Terminer removes the picker while keeping the debugger connection for refresh; the status bar then reads **Baba Select · actualisation auto**.
+Starting Baba Select also connects automatic refresh to the same local `file://` preview. After Codex saves a linked CSS or JavaScript file inside the trusted workspace, Baba Select waits 800 ms to group edits and reloads that tab. It neither saves buffers nor edits the prototype. The × button only hides the panel and keeps selection active. Escape or Terminer removes the picker while keeping the debugger connection for refresh; the status bar then reads **Baba Select · actualisation auto**.
 
 HTML refresh uses VS Code's native `workbench.browser.autoReloadOnFileChange` setting (enabled by default in the tested version). Its watcher tracks the page file, not separate CSS/JavaScript files; Baba Select supplies the latter. A full reload resets transient page state. Re-select a component after an edit if you want fresh context.
 

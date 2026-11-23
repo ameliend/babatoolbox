@@ -61,3 +61,9 @@ Removed both interactive demos and adjusted the guide to a single readable colum
 - Added the close button to the guide: it exits selection mode like Escape/Terminer and restores focus to the previously focused page element.
 - The extension passed all 13 existing automated tests, TypeScript checking and packaging. A separate DOM check verified close-button removal of the picker and focus restoration. No new real VS Code integration check was performed.
 - Verified the new installer matches the supplied build, its ZIP integrity and manifest version, local page links and SHA-256 download checksums.
+
+## Baba Select 0.2.3 — 23 November 2026
+
+- Corrected × to hide only the panel. Selection remains active and a compact button reopens the panel. Escape and Terminer still exit selection mode. This supersedes the 0.2.2 close-button behavior above.
+- All 14 extension tests pass, including selection after hiding, keyboard access to reopening, preserved selection after reopening and Escape while hidden. TypeScript checking and packaging pass.
+- Updated download links, guide and SHA-256 checksums; verified installer integrity, manifest version and local links. No new real VS Code integration check was performed.
