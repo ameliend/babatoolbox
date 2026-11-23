@@ -14,12 +14,12 @@ These are the verified development versions, not a guarantee for every later rel
 
 ## Install and use
 
-1. In VS Code, run **Extensions: Install from VSIX…**, then select `baba-select-0.2.3.vsix`.
+1. In VS Code, run **Extensions: Install from VSIX…**, then select `baba-select-0.2.4.vsix`.
 2. Keep your existing preview and Codex conversation open. Focus the intended Codex conversation first if you have several panels.
 3. Click **Baba Select** in the status bar, or run **Baba Select : sélectionner un élément**. If the debugger asks for a target, choose the **existing preview tab**. Do not choose “Open new…”.
 4. Hover (yellow dashed border), then click (blue solid border). The click creates/updates `baba-select-context.md` in VS Code's extension storage and invokes Codex's official file-context command.
 5. Use **Parent ↑** repeatedly to move from a nested text span to its button, card, then section. Intermediate wrappers are real DOM parents.
-6. Click **×** in the top-right corner to hide the panel while continuing to select components. Use **Baba Select · afficher** to reopen it. Press **Escape** or **Terminer** to exit selection mode and restore normal navigation. Confirm the file chip is visible in Codex, then write your request in the same composer and send it yourself.
+6. Drag the panel header to move it out of the way, or click the header to cycle through screen corners. With the header focused, use arrow keys to move it (Shift for larger steps). Click **×** in the top-right corner to hide the panel while continuing to select components. Use **Baba Select · afficher** to reopen it. Press **Escape** or **Terminer** to exit selection mode and restore normal navigation. Confirm the file chip is visible in Codex, then write your request in the same composer and send it yourself.
 
 Keyboard: Tab to the selection area; Up moves to the parent, Down to the first child, Left/Right to siblings. Enter/Space attaches the focused candidate. Tab also reaches the toolbar buttons, with a visible focus outline. Escape exits selection mode.
 

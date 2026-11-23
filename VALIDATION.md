@@ -67,3 +67,9 @@ Removed both interactive demos and adjusted the guide to a single readable colum
 - Corrected × to hide only the panel. Selection remains active and a compact button reopens the panel. Escape and Terminer still exit selection mode. This supersedes the 0.2.2 close-button behavior above.
 - All 14 extension tests pass, including selection after hiding, keyboard access to reopening, preserved selection after reopening and Escape while hidden. TypeScript checking and packaging pass.
 - Updated download links, guide and SHA-256 checksums; verified installer integrity, manifest version and local links. No new real VS Code integration check was performed.
+
+## Baba Select 0.2.4 — 23 November 2026
+
+- The panel header supports pointer dragging, click-to-cycle corners and keyboard arrow movement (Shift for larger steps). Position is clamped to the viewport and adjusted on resize or panel size changes. Hiding and reopening retains its position.
+- All 15 extension tests pass, including drag movement, post-drag click suppression, keyboard movement, viewport clamping and selection after moving. TypeScript checking and packaging pass.
+- Verified local links, installer ZIP integrity, manifest version and SHA-256 checksums. No new real VS Code integration check was performed.
